@@ -1,0 +1,2 @@
+// Removed the import of _mixins.scss to avoid circular dependency
+@use '../abstract/functions' as f;

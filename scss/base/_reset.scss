@@ -1,0 +1,55 @@
+@use '../abstract/functions' as f;
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as m;
+
+
+// _reset.scss
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding and margin */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol,
+figure,
+blockquote,
+dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Reset links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset image behavior */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* General body styles */
+body {
+  font-family: Arial, sans-serif; 
+  line-height: 1.6;
+}
+
+/* Reset tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
