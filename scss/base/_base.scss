@@ -1,3 +1,17 @@
 @use '../abstract/functions' as f;
 @use '../abstract/variables' as v;
 @use '../abstract/mixins' as m;
+
+body {
+    background-color: v.$purple-50;
+    font-family: v.$font-primary;
+    font-size: v.$font-size;
+    line-height: 1.6;
+    min-height: 100dvh;
+    margin: 0;
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 2px solid v.$primary-blue; 
+    outline-offset: 2px;
+}

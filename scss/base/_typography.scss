@@ -1,3 +1,11 @@
 @use '../abstract/functions' as f;
 @use '../abstract/variables' as v;
 @use '../abstract/mixins' as m;
+
+// Base Typography
+
+body {
+    font-family: v.$font-primary;
+    font-size: v.$font-size;
+    font-weight: v.$font-weight-md;
+}
