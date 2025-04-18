@@ -1,3 +1,10 @@
 @use '../abstract/functions' as f;
 @use '../abstract/variables' as v;
 @use '../abstract/mixins' as m;
+
+// Mobile-first grid system
+.testimonial {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: f.rem(16);
+}

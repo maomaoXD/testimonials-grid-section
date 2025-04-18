@@ -1,3 +1,29 @@
 @use '../abstract/functions' as f;
 @use '../abstract/variables' as v;
 @use '../abstract/mixins' as m;
+
+// Testimonial component styles
+
+.testimonial__card {
+    padding: f.rem(32) f.rem(16);
+}
+
+.testimonial__card--purple {
+    background-color: v.$purple-500;
+    color: v.$white;
+}
+
+.testimonial__card--grey {
+    background-color: v.$grey-500;
+    color: v.$white;
+}
+
+.testimonial__card--white {
+    background-color: v.$white;
+    color: v.$dark-blue;
+}
+
+.testimonial__card--darkblue {
+    background-color: v.$dark-blue;
+    color: v.$white;
+}
