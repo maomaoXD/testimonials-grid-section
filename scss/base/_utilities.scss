@@ -1,3 +1,13 @@
 @use '../abstract/functions' as f;
 @use '../abstract/variables' as v;
 @use '../abstract/mixins' as m;
+
+
+
+.border-purple {
+    border: 2px solid v.$purple-300;
+}
+
+.text-neutral {
+    color: v.$grey-400 !important;
+}

@@ -9,3 +9,11 @@ body {
     font-size: v.$font-size;
     font-weight: v.$font-weight-md;
 }
+
+.testimonial__name {
+    color: v.$grey-200;
+
+    &--title {
+        font-weight: v.$font-weight-md;
+    }
+}

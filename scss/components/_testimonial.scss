@@ -4,26 +4,49 @@
 
 // Testimonial component styles
 
+// Block: Testimonial Card
 .testimonial__card {
-    padding: f.rem(32) f.rem(16);
+    display: grid;
+    gap: f.rem(16);
+
+    padding: clamp(f.rem(16), 5vw, f.rem(32));
+    border-radius: f.rem(8);
+    // Modifiers
+    &--purple {
+        background-color: v.$purple-500;
+        color: v.$white;
+    }
+
+    &--grey {
+        background-color: v.$grey-500;
+        color: v.$white;
+    }
+
+    &--white {
+        background-color: v.$white;
+        color: v.$dark-blue;
+    }
+
+    &--darkblue {
+        background-color: v.$dark-blue;
+        color: v.$white;
+    }
 }
 
-.testimonial__card--purple {
-    background-color: v.$purple-500;
-    color: v.$white;
-}
 
-.testimonial__card--grey {
-    background-color: v.$grey-500;
-    color: v.$white;
-}
 
-.testimonial__card--white {
-    background-color: v.$white;
-    color: v.$dark-blue;
-}
+// Element: Testimonial Info
 
-.testimonial__card--darkblue {
-    background-color: v.$dark-blue;
-    color: v.$white;
+.testimonial {
+
+    &__info {
+        display: flex;
+        gap: f.rem(20);
+        
+    }
+
+    &__img {
+        border-radius: 50%;
+    }
+
 }
