@@ -3,15 +3,15 @@
 @use '../abstract/mixins' as m;
 
 body {
+    display: grid;
+    place-items: center;
     background-color: v.$purple-50;
-    font-family: v.$font-primary;
-    font-size: v.$font-size;
-    line-height: 1.6;
+    line-height: 1.5;
     min-height: 100dvh;
     margin: 0;
 }
 
 a:focus-visible, button:focus-visible {
-    outline: 2px solid v.$purple-500; 
-    outline-offset: 2px;
+    outline: 3px dashed v.$purple-700; 
+    outline-offset: 4px; 
 }

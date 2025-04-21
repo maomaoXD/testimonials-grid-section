@@ -1,3 +1,18 @@
 @use '../abstract/functions' as f;
 @use '../abstract/variables' as v;
 @use '../abstract/mixins' as m;
+
+.testimonial-container {
+    height: 100%;
+    margin: 0 auto;
+    padding: clamp(f.rem(16), 4vw, f.rem(32));
+    min-width: f.rem(375);
+    max-width: f.rem(1440);
+}
+
+.testimonial {
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto; 
+    
+}

@@ -6,16 +6,54 @@
 
 .testimonial-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
     place-items: center;
-    height: 100%;
-    padding: clamp(f.rem(16), 5vw, f.rem(32));
-    min-width: f.rem(375);
-    max-width: f.rem(1440);
+    
 }
 
 .testimonial {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
     gap: f.rem(30);
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+
+    @media screen and (min-width: 480px) {
+        grid-template-areas: 
+        'one one'
+        'two five'
+        'three five'
+        'four four';
+        
+    }
+
+
+    @media screen and (min-width: 768px) {
+        grid-template-areas: 
+        'one one two five'
+        'three four four five';
+        
+    }
 }
+
+.testimonial > .testimonial__card:nth-child(1) {
+    grid-area: one;
+}
+
+.testimonial > .testimonial__card:nth-child(2) {
+    grid-area: two;
+}
+
+.testimonial > .testimonial__card:nth-child(3) {
+    grid-area: three;
+}
+
+.testimonial > .testimonial__card:nth-child(4) {
+    grid-area: four;
+}
+
+.testimonial > .testimonial__card:nth-child(5) {
+    grid-area: five;
+}   

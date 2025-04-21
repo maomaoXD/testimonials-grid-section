@@ -6,14 +6,30 @@
 
 body {
     font-family: v.$font-primary;
+    color: v.$grey-400;
     font-size: v.$font-size;
-    font-weight: v.$font-weight-md;
+    font-weight: v.$font-weight-semibold;
 }
 
 .testimonial__name {
+    line-height: 1.3;
     color: v.$grey-200;
 
     &--title {
         font-weight: v.$font-weight-md;
     }
 }
+
+.testimonial__text {
+    &-headline {
+        font-size: clamp(f.rem(18), 2vw, f.rem(24));
+        font-weight: v.$font-weight-semibold;
+        line-height: 1.2;
+        padding: clamp(f.rem(16), 4vw, f.rem(24)) 0;
+    }
+
+    &-context {
+        font-size: v.$font-size;
+    }
+}
+
